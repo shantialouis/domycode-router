@@ -6,6 +6,8 @@ import MovieListHeading from './component/MovieListHeading';
 import SearchBox from './component/SearchBox';
 import AddFavourite from './component/AddFavourite';
 import { AddMovie } from './component/AddMovie';
+import Trailer from './Component/Trailer';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 const App = () => {
 	const [movies, setMovies] = useState([]);
@@ -51,6 +53,7 @@ const App = () => {
 			<div className='row'>
 				<MovieList movies={favourite} favouriteComponent={AddFavourite} />
 			</div>
+			<Trailer/>
 			    
 		</div>
 	);
